@@ -10,18 +10,20 @@ def create_vpc(vpc_cidr_block):
         AmazonProvidedIpv6CidrBlock=False
     )
     vpc_id = response['Vpc']['VpcId']
+	
     print(f"VPC created: {vpc_id}")
     return vpc_id
 
 # Create subnets
-def create_subnet(vpc_id, cidr_block, availability_zone):
+def create_subnet(vpc_id, cidr_block, a_zone):
     ec2 = session.client('ec2')
     response = ec2.create_subnet(
         VpcId=vpc_id,
         CidrBlock=cidr_block,
-        AvailabilityZone=availability_zone
+        AvailabilityZone=a_zone
     )
     subnet_id = response['Subnet']['SubnetId']
+	
     print(f"Subnet created: {subnet_id}")
     return subnet_id
 
