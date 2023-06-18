@@ -7,3 +7,5 @@ IAM_policy-cleanup - this script cleans up any misspelled policy names, in this 
 create s3 - that python script creates a simple private s3 bucket to any region of your choice
 
 vpc-subnet creation - creates vpc and subnets of your choosing in a specific account
+
+sns-sqs - this creates a simple SNS and SQS queue
