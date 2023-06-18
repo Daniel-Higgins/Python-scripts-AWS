@@ -13,3 +13,5 @@ sns-sqs - this creates a simple SNS and SQS queue
 ebs-cleanup - this script scans for any unattached EBS volumes, takes a snapshot of them, and then deletes the volume to save costs
   
 launch-rds - this script takes a snapshot of an RDS and launches a new RDS based off of the snapshot taken
+
+workspace-start - this script is basic and turns on all the present workspaces in an aws account
