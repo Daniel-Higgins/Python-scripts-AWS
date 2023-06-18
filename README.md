@@ -9,3 +9,6 @@ create s3 - that python script creates a simple private s3 bucket to any region 
 vpc-subnet creation - creates vpc and subnets of your choosing in a specific account
 
 sns-sqs - this creates a simple SNS and SQS queue
+
+
+launch-rds - this script takes a snapshot of an RDS and launches a new RDS based off of the snapshot taken
