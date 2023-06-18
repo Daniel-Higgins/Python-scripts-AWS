@@ -17,13 +17,14 @@ for response in paginator.paginate(Scope="Local"):
             if policy['PolicyName'].endswith(".json"):
                 policyList.append(policy)
                 #print(f"Policy Name: {policy['PolicyName']} ARN: {policy['Arn']}")
-
+#roles
 def pDeetsR(arn):
     iam = session.resource('iam')
     policy = iam.Policy(arn)
     x = policy.attached_roles.all()
     return x
 
+#groups
 def pDeetsG(arn):
     iam = session.resource('iam')
     policy = iam.Policy(arn)
