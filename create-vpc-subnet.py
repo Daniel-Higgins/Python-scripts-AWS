@@ -25,10 +25,10 @@ def create_subnet(vpc_id, cidr_block, availability_zone):
     print(f"Subnet created: {subnet_id}")
     return subnet_id
 
-# Main
+# Main - pick AZs and CIDRs
 vpc_cidr_block = '10.0.0.0/16'
 availability_zones = ['us-west-2a', 'us-west-2b', 'us-west-2c']
-subnet_cidr_blocks = ['10.0.1.0/24', '10.0.2.0/24', '10.0.3.0/24']
+subnet_cidr_blocks = ['10.11.1.0/24', '10.11.2.0/24', '10.11.3.0/24']
 
 vpc_id = create_vpc(vpc_cidr_block)
 
