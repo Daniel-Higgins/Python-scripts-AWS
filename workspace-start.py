@@ -1,5 +1,4 @@
 import boto3
-import time
 
 session = boto3.Session(profile_name='account')
 
